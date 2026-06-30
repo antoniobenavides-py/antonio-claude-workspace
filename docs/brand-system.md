@@ -1,36 +1,118 @@
 # SISTEMA DE MARCA — Antonio Benavides
 
 **Fuente ÚNICA de marca** para web (antoniobenavides.com), LinkedIn y recursos `/recursos`.
-Estado: **esqueleto inicial (30-jun-2026)**.
-
-> ⚠️ Secciones marcadas `TODO`: volcar desde la **sesión del 29-jun** (logo, paleta refinada y carruseles, trabajados en el otro PC y aún no integrados).
-> Los tokens de abajo son el **estado actual según las skills** (`lead-magnet-pdf`, `post-linkedin`). **CONFIRMAR / actualizar** contra lo decidido el 29-jun antes de darlos por definitivos.
+Estado: **v1.0 · 30-jun-2026** — logo, paleta y formatos de carrusel consolidados.
 
 ---
 
 ## 1. Logo y marca corporativa
 
-> **TODO (29-jun · otro PC):** logo corporativo, variantes (color / mono / negativo), área de respeto, tamaños mínimos, usos correctos e incorrectos, favicon.
+### Símbolo y wordmark
+
+**Símbolo:** Monograma AB clásico con serif, dentro de un círculo fino con barras laterales verticales a ambos lados.
+**Wordmark:** "Antonio Benavides" en sans-serif ligero, tracking amplio, con guión corto centrado debajo.
+
+### Variantes de color
+
+| Variante | Fondo | Símbolo / texto | Uso principal |
+|---|---|---|---|
+| **Principal (dark)** | Cyprus `#004741` | Sand `#F0EDE4` | Perfil LinkedIn, web, presentaciones dark |
+| **Secundaria (light)** | Sand `#F0EDE4` | Cyprus `#004741` | Documentos, propuestas, emails, fondos claros |
+
+### Archivos fuente
+
+- **PNG:** `look and feel/ChatGPT Image 29 jun 2026, 18_11_02.png` (generado con ChatGPT, jun 2026)
+- **SVG:** pendiente para el rediseño web. La geometría es limpia y reproducible sin dificultad.
+
+### Aplicaciones
+
+| Superficie | Variante | Notas |
+|---|---|---|
+| Foto de perfil LinkedIn | Dark (Cyprus) | Recortada cuadrada |
+| Favicon web | Dark, solo símbolo | Sin wordmark |
+| Documentos / propuestas | Light o dark según fondo | |
+| Marca de agua en carruseles | Light, opacidad reducida | Esquina inferior derecha |
+| Cabecera de emails | Light sobre fondo claro | |
+
+### Usos incorrectos
+
+- No cambiar los colores fuera del sistema Cyprus / Sand.
+- No eliminar el círculo ni las barras laterales del símbolo.
+- No usar la serif del monograma como tipografía del sistema (es exclusiva del símbolo).
+- No distorsionar proporciones.
+- No añadir sombras, brillos ni efectos.
 
 ---
 
 ## 2. Paleta de color
 
-| Token | Valor | Uso |
-|---|---|---|
-| INK (navy profundo) | `#0F1620` | Fondo web · texto sobre claro |
-| Cobre (gradiente) | `#E0A05E → #C8824E` | Acentos, titulares, CTA |
-| Teal (acento) | `#14B8A6` | Destacados puntuales |
+### Sistema multi-proyecto (decidido 29-jun-2026)
 
-> **CONFIRMAR contra 29-jun** (puede haberse refinado/ampliado).
+Hilo verde estratégico en tres saturaciones = ecosistema reconocible. Cada proyecto mantiene el mismo lenguaje cromático en un registro distinto.
+
+| Proyecto | Token | Hex | Rol |
+|---|---|---|---|
+| **antoniobenavides.com** | Cyprus | `#004741` | Base / profundo · fondo principal dark |
+| | Sand | `#F0EDE4` | Neutro cálido · fondo light y texto sobre dark |
+| **vibecodinges.com** | Tiffany | `#21F1A8` | Principal / luminoso · CTAs y acentos |
+| | Dark Gray | `#171717` | Base dark |
+| | Milky | `#FFFDF1` | Fondo light (zona recursos / educación) |
+| | Mantis | `#59C749` | Acento en modo claro |
+| **vibesplab.com** | Luminous Moss | `#2BEE34` | Principal / neón · lab y experimentación |
+| | Silver | `#141414` | Base near-black |
+
+```css
+/* antoniobenavides.com */
+:root {
+  --brand:  #004741;  /* Cyprus */
+  --bg:     #F0EDE4;  /* Sand */
+  --ink:    #171717;
+}
+
+/* vibecodinges.com */
+:root {
+  --brand:        #21F1A8;  /* Tiffany */
+  --bg-dark:      #171717;
+  --bg-light:     #FFFDF1;  /* Milky */
+  --accent-light: #59C749;  /* Mantis */
+}
+
+/* vibesplab.com */
+:root {
+  --brand: #2BEE34;  /* Luminous Moss */
+  --bg:    #141414;  /* Silver */
+}
+```
+
+### Estado actual de antoniobenavides.com (en transición)
+
+La web desplegada usa la paleta anterior hasta el rediseño. **No tocar antes del primer cierre comercial.**
+
+```css
+/* Paleta desplegada — mantener hasta rediseño Cyprus/Sand */
+--ink:          #0F1620;
+--copper-start: #E0A05E;
+--copper-end:   #C8824E;
+--teal:         #14B8A6;
+```
+
+Los P0 de botones ya usan `btn-copper` (`#E0A05E → #C8824E`) — se mantienen hasta el rediseño.
 
 ---
 
 ## 3. Tipografía
 
-- **Space Grotesk** — titulares
-- **Inter** — texto corrido
-- **JetBrains Mono** — código / datos
+### Web (antoniobenavides.com — estado actual)
+
+- **Space Grotesk** — titulares, headings
+- **Inter** — texto corrido, body
+- **JetBrains Mono** — código, datos, fragmentos monospace
+
+### Carruseles LinkedIn (producción en herramientas externas)
+
+- **Titular:** Playfair Display Bold o Cormorant Garamond Bold — peso y autoridad
+- **Cuerpo:** DM Sans Regular o Inter Light — legible, clean
+- **Tracking:** amplio (+2/+3) en subtítulos y wordmark
 
 ---
 
@@ -42,15 +124,64 @@ Doble barra para entidades de marca: `ARCHIVO//MAESTRO`, `VIBECODING//ES`, `TRIA
 
 ## 5. Tratamiento por superficie
 
-- **Web:** oscura, "clinical-nocturnal" (fondo INK).
-- **PDF / recursos:** fondo **claro** para lectura e impresión (INK texto, cobre acentos, teal destacados). Premium y limpio.
+- **Web:** oscura, "clinical-nocturnal". Fondo INK actual → Cyprus `#004741` en rediseño.
+- **PDF / recursos:** fondo **claro** para lectura e impresión. Premium y limpio.
 - **LinkedIn (carruseles):** ver sección 6.
 
 ---
 
 ## 6. Formatos de carrusel LinkedIn
 
-> **TODO (29-jun · otro PC):** dimensiones, retícula, plantilla de portada, tratamiento tipográfico en imagen, uso de logo/marca de agua, paleta aplicada al carrusel.
+### Especificaciones técnicas
+
+- **Formato de entrega:** PDF (carrusel nativo LinkedIn) o secuencia de imágenes
+- **Dimensiones:** 1080 × 1080 px (cuadrado 1:1)
+- **Cadencia:** todos los lunes, 9:00 — mínimo 4 carruseles/mes
+
+### División de trabajo
+
+| Qué | Quién / Dónde |
+|---|---|
+| Estrategia, calendario, copy slide a slide, brief visual | Claude (en workspace) |
+| Producción visual | Herramienta externa: ChatGPT Image, Gamma, Canva AI o Gemini |
+
+Los scripts de contenido (copy por slide) se guardan en `scripts/carruseles/*.json` del workspace.
+
+### Paleta aplicada al carrusel
+
+Alineada con la nueva dirección de marca (Cyprus + Sand):
+
+| Elemento | Valor |
+|---|---|
+| Fondo dark | Cyprus `#004741` |
+| Texto sobre dark | Sand `#F0EDE4` |
+| Fondo light (slides de respiro) | Sand `#F0EDE4` |
+| Texto sobre light | Cyprus `#004741` |
+
+Slides alternando dark / light para ritmo visual.
+
+### Estructura de slides
+
+```
+PORTADA     → fondo Cyprus · título grande en Sand · wordmark AB pequeño (esquina)
+SLIDES 2–N  → alternando Cyprus/Sand · máx. 4-5 líneas · una idea por slide
+              slides con sección: label en uppercase + línea divisoria + cuerpo
+CIERRE      → fondo Cyprus · pregunta o reflexión · "Antonio Benavides" + URL si procede
+```
+
+### Brief visual para herramienta externa
+
+⚠️ **Pendiente de finalizar:** Benavides aportará ejemplos de carruseles anteriores (ChatGPT, Gamma, Canva) para analizar el estilo y consolidar el brief estandarizado de producción.
+Hasta entonces: Combo 04 Cyprus/Sand + Playfair Display Bold (titular) + DM Sans (cuerpo).
+
+### Carruseles julio 2026 — copy listo para producir
+
+| Fecha | Tema | Archivo JSON (workspace) |
+|---|---|---|
+| lun 6 jul | Agente vs automatización | `scripts/carruseles/2026-07-06-agente-vs-automatizacion.json` |
+| lun 13 jul | 5 filtros para decidir en qué IA invertir | `scripts/carruseles/2026-07-13-cinco-filtros-roi.json` |
+| lun 20 jul | Las 6 dimensiones de madurez en IA | `scripts/carruseles/2026-07-20-seis-dimensiones-madurez.json` |
+| lun 27 jul | Anatomía de un despliegue real | `scripts/carruseles/2026-07-27-anatomia-despliegue.json` |
 
 ---
 
@@ -63,9 +194,9 @@ Detalle completo en las skills `post-linkedin` y `lead-magnet-pdf`.
 
 ## 8. Checklist de coherencia
 
-- [ ] ¿Colores dentro de la paleta?
-- [ ] ¿Tipografías correctas por jerarquía?
+- [ ] ¿Colores dentro de la paleta del proyecto?
+- [ ] ¿Tipografías correctas por jerarquía y superficie?
 - [ ] ¿Nomenclatura doble-barra donde aplica?
 - [ ] ¿Tratamiento correcto según superficie (oscuro web / claro PDF)?
-- [ ] ¿Logo en versión correcta y con área de respeto? *(pendiente def. sección 1)*
+- [ ] ¿Logo en variante correcta (dark o light) con área de respeto?
 - [ ] ¿Voz practitioner, cifras sin inflar?
