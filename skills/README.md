@@ -12,6 +12,7 @@ Skills de trabajo de Benavides, portadas desde Claude.ai. Cada una vive en `<nom
 | [traspaso-sesion](traspaso-sesion/SKILL.md) | Documento de traspaso para continuar en sesión nueva sin pérdida de contexto. | — |
 | [cv-portfolio](cv-portfolio/SKILL.md) | CVs/portfolios ATS-safe, dos variantes (IA generalista · finanzas+IA). | generación .docx |
 | [lead-magnet-pdf](lead-magnet-pdf/SKILL.md) | Lead magnets PDF con brand system para `/recursos`. | generación PDF/.docx |
+| [look-and-feel](look-and-feel/SKILL.md) | Sistema de marca: logo, paleta, tipografía, carruseles y checklist por superficie. Fuente de verdad: `docs/brand-system.md`. | — |
 
 ## Nota sobre dependencias
 
