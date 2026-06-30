@@ -5,6 +5,17 @@
 
 ---
 
+## PROTOCOLO MULTI-EQUIPO (leer primero)
+
+Benavides trabaja desde **2 ordenadores** sobre este mismo repo. **Este `CONTEXT.md` es la ÚNICA fuente de verdad.** La memoria local de Claude Code en cada PC es secundaria: si discrepa, gana este archivo.
+
+- **Inicio de sesión:** Benavides dice *"lee context.md"*. Claude lee este archivo (`get_file_contents`), lo toma como verdad y revisa HISTORIAL DE SESIONES para retomar donde se quedó.
+- **Cierre de sesión:** Benavides dice *"cierra / me voy / guarda"*. Claude sintetiza lo trabajado, actualiza este archivo (`create_or_update_file`) y añade fila al HISTORIAL. **Guardado incremental:** también tras cada hito, por si se cierra la app de golpe.
+- **Sin hook automático** (decisión jun-2026): disparo manual por frases, más simple y sin infraestructura que mantener.
+- **Traspaso entre PCs:** no se pasan conversaciones. Todo lo relevante se vuelca aquí. Para arrancar en el otro equipo basta con *"lee context.md"*.
+
+---
+
 ## PERFIL
 
 - 33 años, Almería. Empleado en Analytica Alimentaria (lab ISO 17025).
@@ -133,3 +144,5 @@ Reglas: prestige pricing, números redondos, sin charm pricing, sin lista públi
 | jun 2026 | Pricing comercial finalizado + 8 Skills + 2 CVs + portfolio |
 | jun 2026 | Posicionamiento final: "arquitecto de IA aplicada a negocio, con mentalidad de inversor" |
 | 29 jun 2026 | Creación de antonio-claude-workspace en GitHub + integración de contexto completo |
+| 29 jun 2026 | Trabajo de marca (logo, paleta, formatos de carruseles LinkedIn) — ⚠️ PENDIENTE de volcar a `docs/brand-system.md` desde el otro PC |
+| 30 jun 2026 | Definido PROTOCOLO MULTI-EQUIPO (repo = fuente de verdad, disparo manual inicio/cierre, guardado incremental) |
