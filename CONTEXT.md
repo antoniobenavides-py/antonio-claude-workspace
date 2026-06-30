@@ -60,10 +60,10 @@ Benavides trabaja desde **2 ordenadores** sobre este mismo repo. **Este `CONTEXT
 
 - **Fuente única de marca = `docs/brand-system.md`** (en este repo). NO dispersar la marca en skills locales.
 - **Estado: v1.0 completo (30-jun-2026).** Logo, paleta multi-proyecto, tipografía y formatos de carrusel LinkedIn consolidados.
+- **Skill `look-and-feel` creado (30-jun-2026)** — operativo, apunta a `docs/brand-system.md`. Marca y branding CERRADOS.
 - Paleta decidida: sistema verde multi-proyecto (Cyprus+Sand para hub · Tiffany+Dark Gray para vibecodinges · Luminous Moss+Silver para vibesplab).
 - Logo: monograma AB en círculo, Cyprus+Sand, PNG en workspace. SVG pendiente para rediseño web.
 - Rediseño web Cyprus/Sand: **no antes del primer cierre comercial.**
-- Siguiente: crear skill local `look-and-feel` apuntando a `docs/brand-system.md`.
 
 ---
 
@@ -115,12 +115,13 @@ Reglas: prestige pricing, números redondos, sin charm pricing, sin lista públi
 
 ## ACTIVOS YA CONSTRUIDOS
 
-- 8 Claude Skills: `deploy-produccion`, `traspaso-sesion`, `log-construccion`, `propuesta-comercial`, `arquitectura-agentes`, `cv-portfolio`, `post-linkedin`, `lead-magnet-pdf`
+- 9 Claude Skills: `deploy-produccion`, `traspaso-sesion`, `log-construccion`, `propuesta-comercial`, `arquitectura-agentes`, `cv-portfolio`, `post-linkedin`, `lead-magnet-pdf`, `look-and-feel`
 - 4 PDF lead magnets en `/recursos`
 - 2 CVs ATS-optimizados (variante generalista IA + variante finanzas+IA)
 - Portfolio: 25+ casos con métricas concretas
 - LinkedIn Serie A corriendo (→ 7 jul). Serie Recursos arranca 14 jul.
 - `docs/brand-system.md` v1.0 — sistema de marca completo
+- Skill `look-and-feel` — marca y branding operativos y cerrados
 
 ---
 
@@ -192,6 +193,7 @@ Reglas: prestige pricing, números redondos, sin charm pricing, sin lista públi
 | 29 jun 2026 | Creación de antonio-claude-workspace en GitHub + integración de contexto completo |
 | 29 jun 2026 | Marca: logo (monograma AB círculo Cyprus+Sand), paleta multi-proyecto (sistema verde), formatos carrusel LinkedIn. Copy de 4 carruseles julio + 4 posts Serie Recursos listos. P0 web resueltos (RecursosGratuitos.tsx + Recursos.tsx → btn-copper, desplegado en producción). |
 | 30 jun 2026 | Montado PROTOCOLO MULTI-EQUIPO. Creado docs/brand-system.md v1.0 completo (logo, paleta, tipografía, carruseles). |
+| 30 jun 2026 | Skill `look-and-feel` creado. Marca y branding CERRADOS. 9 skills totales. |
 
 ---
 
@@ -200,5 +202,5 @@ Reglas: prestige pricing, números redondos, sin charm pricing, sin lista públi
 1. **P0 pendiente:** CTA post-descarga en `/recursos` (único bloqueador restante antes de 14 jul).
 2. **LinkedIn carruseles:** producir visualmente los 4 de julio con herramienta externa (pendiente brief estandarizado — Benavides aportará ejemplos de carruseles anteriores).
 3. **Serie Recursos:** programar los 4 posts (14, 21, 28 jul · 4 ago) en LinkedIn scheduler.
-4. **Skill `look-and-feel`:** crear apuntando a `docs/brand-system.md` (baja prioridad).
+4. ~~**Skill `look-and-feel`:** crear apuntando a `docs/brand-system.md`~~ → **RESUELTO** (30-jun)
 5. **Sesión pendiente:** definir modelo de facturación y cobro (gap comercial urgente antes del primer deal).
