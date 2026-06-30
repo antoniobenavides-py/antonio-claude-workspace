@@ -56,13 +56,14 @@ Benavides trabaja desde **2 ordenadores** sobre este mismo repo. **Este `CONTEXT
 
 ---
 
-## MARCA / LOOK & FEEL
+## MARCA / LOOK & FEEL — CERRADO ✅
 
-- **Fuente única de marca = `docs/brand-system.md`** (en este repo). NO dispersar la marca en skills locales.
-- **Estado: v1.0 completo (30-jun-2026).** Logo, paleta multi-proyecto, tipografía y formatos de carrusel LinkedIn consolidados.
-- **Skill `look-and-feel` creado (30-jun-2026)** — operativo, apunta a `docs/brand-system.md`. Marca y branding CERRADOS.
-- Paleta decidida: sistema verde multi-proyecto (Cyprus+Sand para hub · Tiffany+Dark Gray para vibecodinges · Luminous Moss+Silver para vibesplab).
-- Logo: monograma AB en círculo, Cyprus+Sand, PNG en workspace. SVG pendiente para rediseño web.
+- **Fuente única de marca = `docs/brand-system.md`** v1.1 (30-jun-2026).
+- **Skill `look-and-feel`** operativo — `skills/look-and-feel/SKILL.md`.
+- **Catálogo de paletas** — `docs/paletas-combos-colores.md` (10 combos con asignación por proyecto).
+- **Logo:** monograma AB geométrico moderno. A y B entrelazadas, diseño angular bold, sin serif, sin círculo. Variante principal = DARK (fondo Cyprus `#004741` · símbolo Sand `#F0EDE4`).
+- **PNG logo** ⚠️ PENDIENTE subida manual: arrastrar `look and feel/ChatGPT Image 29 jun 2026, 18_17_29.png` a `assets/logo/logo-ab.png` en GitHub web.
+- Paleta decidida: Combo 04 Cyprus+Sand (hub) · Combo 01 Tiffany+Dark Gray (vibecodinges) · Combo 08 Silver+Luminous Moss (vibesplab).
 - Rediseño web Cyprus/Sand: **no antes del primer cierre comercial.**
 
 ---
@@ -120,7 +121,8 @@ Reglas: prestige pricing, números redondos, sin charm pricing, sin lista públi
 - 2 CVs ATS-optimizados (variante generalista IA + variante finanzas+IA)
 - Portfolio: 25+ casos con métricas concretas
 - LinkedIn Serie A corriendo (→ 7 jul). Serie Recursos arranca 14 jul.
-- `docs/brand-system.md` v1.0 — sistema de marca completo
+- `docs/brand-system.md` v1.1 — sistema de marca completo y corregido
+- `docs/paletas-combos-colores.md` — catálogo de 10 combos de color
 - Skill `look-and-feel` — marca y branding operativos y cerrados
 
 ---
@@ -191,16 +193,16 @@ Reglas: prestige pricing, números redondos, sin charm pricing, sin lista públi
 | jun 2026 | Pricing comercial finalizado + 8 Skills + 2 CVs + portfolio |
 | jun 2026 | Posicionamiento final: "arquitecto de IA aplicada a negocio, con mentalidad de inversor" |
 | 29 jun 2026 | Creación de antonio-claude-workspace en GitHub + integración de contexto completo |
-| 29 jun 2026 | Marca: logo (monograma AB círculo Cyprus+Sand), paleta multi-proyecto (sistema verde), formatos carrusel LinkedIn. Copy de 4 carruseles julio + 4 posts Serie Recursos listos. P0 web resueltos (RecursosGratuitos.tsx + Recursos.tsx → btn-copper, desplegado en producción). |
-| 30 jun 2026 | Montado PROTOCOLO MULTI-EQUIPO. Creado docs/brand-system.md v1.0 completo (logo, paleta, tipografía, carruseles). |
-| 30 jun 2026 | Skill `look-and-feel` creado. Marca y branding CERRADOS. 9 skills totales. |
+| 29 jun 2026 | Marca: logo, paleta multi-proyecto, formatos carrusel LinkedIn. Copy carruseles julio + posts Serie Recursos listos. P0 web resueltos. |
+| 30 jun 2026 | Protocolo multi-equipo. `docs/brand-system.md` v1.0. |
+| 30 jun 2026 | Marca y branding CERRADOS: skill `look-and-feel`, `docs/paletas-combos-colores.md`, `brand-system.md` v1.1 con logo corregido (monograma AB geométrico, no serif ni círculo). PNG logo pendiente subida manual a `assets/logo/logo-ab.png`. |
 
 ---
 
 ## PRÓXIMO PASO (al retomar)
 
-1. **P0 pendiente:** CTA post-descarga en `/recursos` (único bloqueador restante antes de 14 jul).
-2. **LinkedIn carruseles:** producir visualmente los 4 de julio con herramienta externa (pendiente brief estandarizado — Benavides aportará ejemplos de carruseles anteriores).
+0. ⚠️ **ACCIÓN MANUAL PENDIENTE:** subir PNG del logo a GitHub — arrastrar `look and feel/ChatGPT Image 29 jun 2026, 18_17_29.png` a `assets/logo/logo-ab.png` desde la web de GitHub.
+1. **P0 pendiente:** CTA post-descarga en `/recursos` (único bloqueador antes de 14 jul).
+2. **LinkedIn carruseles:** producir visualmente los 4 de julio (pendiente brief estandarizado + ejemplos de carruseles anteriores de Benavides).
 3. **Serie Recursos:** programar los 4 posts (14, 21, 28 jul · 4 ago) en LinkedIn scheduler.
-4. ~~**Skill `look-and-feel`:** crear apuntando a `docs/brand-system.md`~~ → **RESUELTO** (30-jun)
-5. **Sesión pendiente:** definir modelo de facturación y cobro (gap comercial urgente antes del primer deal).
+4. **Sesión pendiente:** definir modelo de facturación y cobro (gap comercial urgente antes del primer deal).
