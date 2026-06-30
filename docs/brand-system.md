@@ -1,7 +1,7 @@
 # SISTEMA DE MARCA — Antonio Benavides
 
 **Fuente ÚNICA de marca** para web (antoniobenavides.com), LinkedIn y recursos `/recursos`.
-Estado: **v1.0 · 30-jun-2026** — logo, paleta y formatos de carrusel consolidados.
+Estado: **v1.1 · 30-jun-2026** — logo corregido con descripción real, paleta y formatos de carrusel consolidados.
 
 ---
 
@@ -9,20 +9,23 @@ Estado: **v1.0 · 30-jun-2026** — logo, paleta y formatos de carrusel consolid
 
 ### Símbolo y wordmark
 
-**Símbolo:** Monograma AB clásico con serif, dentro de un círculo fino con barras laterales verticales a ambos lados.
+**Símbolo:** Monograma AB geométrico moderno. Las letras A y B se entrelazan compartiendo un eje vertical central. La A adopta una forma triangular angular con vértice superior y corte interior diagonal. La B usa aristas cortadas en ángulo (sin curvas), integrándose con la A en una sola forma compacta. Diseño bold, sin serif, sin círculo, sin barras laterales.
+
 **Wordmark:** "Antonio Benavides" en sans-serif ligero, tracking amplio, con guión corto centrado debajo.
+
+**Variante principal (primaria): DARK** — fondo Cyprus, símbolo y wordmark en Sand. Es la variante de referencia.
 
 ### Variantes de color
 
 | Variante | Fondo | Símbolo / texto | Uso principal |
 |---|---|---|---|
-| **Principal (dark)** | Cyprus `#004741` | Sand `#F0EDE4` | Perfil LinkedIn, web, presentaciones dark |
+| **Principal (dark)** ⭐ | Cyprus `#004741` | Sand `#F0EDE4` | Perfil LinkedIn, web, presentaciones dark, uso general |
 | **Secundaria (light)** | Sand `#F0EDE4` | Cyprus `#004741` | Documentos, propuestas, emails, fondos claros |
 
 ### Archivos fuente
 
-- **PNG:** `look and feel/ChatGPT Image 29 jun 2026, 18_11_02.png` (generado con ChatGPT, jun 2026)
-- **SVG:** pendiente para el rediseño web. La geometría es limpia y reproducible sin dificultad.
+- **PNG (fuente de verdad):** `assets/logo/logo-ab.png` en este repo ⚠️ *pendiente de subida manual — arrastrar desde local `look and feel/ChatGPT Image 29 jun 2026, 18_17_29.png`*
+- **SVG:** pendiente para el rediseño web. La geometría es limpia y reproducible.
 
 ### Aplicaciones
 
@@ -37,8 +40,8 @@ Estado: **v1.0 · 30-jun-2026** — logo, paleta y formatos de carrusel consolid
 ### Usos incorrectos
 
 - No cambiar los colores fuera del sistema Cyprus / Sand.
-- No eliminar el círculo ni las barras laterales del símbolo.
-- No usar la serif del monograma como tipografía del sistema (es exclusiva del símbolo).
+- No añadir círculo, barras, marcos ni ornamentos al símbolo.
+- No usar versión serif ni redondear las aristas angulares del monograma.
 - No distorsionar proporciones.
 - No añadir sombras, brillos ni efectos.
 
@@ -48,7 +51,7 @@ Estado: **v1.0 · 30-jun-2026** — logo, paleta y formatos de carrusel consolid
 
 ### Sistema multi-proyecto (decidido 29-jun-2026)
 
-Hilo verde estratégico en tres saturaciones = ecosistema reconocible. Cada proyecto mantiene el mismo lenguaje cromático en un registro distinto.
+Hilo verde estratégico en tres saturaciones = ecosistema reconocible. Catálogo completo de 10 combos en `docs/paletas-combos-colores.md`.
 
 | Proyecto | Token | Hex | Rol |
 |---|---|---|---|
@@ -149,7 +152,7 @@ Los scripts de contenido (copy por slide) se guardan en `scripts/carruseles/*.js
 
 ### Paleta aplicada al carrusel
 
-Alineada con la nueva dirección de marca (Cyprus + Sand):
+Alineada con la dirección de marca Cyprus + Sand:
 
 | Elemento | Valor |
 |---|---|
@@ -163,7 +166,7 @@ Slides alternando dark / light para ritmo visual.
 ### Estructura de slides
 
 ```
-PORTADA     → fondo Cyprus · título grande en Sand · wordmark AB pequeño (esquina)
+PORTADA     → fondo Cyprus · título grande en Sand · wordmark AB pequeño (esquina, opacidad reducida)
 SLIDES 2–N  → alternando Cyprus/Sand · máx. 4-5 líneas · una idea por slide
               slides con sección: label en uppercase + línea divisoria + cuerpo
 CIERRE      → fondo Cyprus · pregunta o reflexión · "Antonio Benavides" + URL si procede
@@ -200,3 +203,4 @@ Detalle completo en las skills `post-linkedin` y `lead-magnet-pdf`.
 - [ ] ¿Tratamiento correcto según superficie (oscuro web / claro PDF)?
 - [ ] ¿Logo en variante correcta (dark o light) con área de respeto?
 - [ ] ¿Voz practitioner, cifras sin inflar?
+- [ ] ¿Logo PNG disponible en `assets/logo/logo-ab.png`?
