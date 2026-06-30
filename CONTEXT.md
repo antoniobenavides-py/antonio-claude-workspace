@@ -56,6 +56,15 @@ Benavides trabaja desde **2 ordenadores** sobre este mismo repo. **Este `CONTEXT
 
 ---
 
+## MARCA / LOOK & FEEL
+
+- **Fuente única de marca = `docs/brand-system.md`** (en este repo). NO dispersar la marca en skills locales (no sincronizan entre PCs).
+- Estado: esqueleto con tokens consolidados (paleta INK/cobre/teal, tipografías, doble-barra, tratamiento por superficie).
+- **Pendiente:** volcar **logo corporativo** y **formatos de carrusel LinkedIn** desde la sesión del 29-jun (otro PC).
+- Siguiente: tras completar el doc, crear skill local `look-and-feel` que apunte a él.
+
+---
+
 ## PRICING COMERCIAL (confirmado, todos + IVA)
 
 | Servicio | Precio |
@@ -145,4 +154,12 @@ Reglas: prestige pricing, números redondos, sin charm pricing, sin lista públi
 | jun 2026 | Posicionamiento final: "arquitecto de IA aplicada a negocio, con mentalidad de inversor" |
 | 29 jun 2026 | Creación de antonio-claude-workspace en GitHub + integración de contexto completo |
 | 29 jun 2026 | Trabajo de marca (logo, paleta, formatos de carruseles LinkedIn) — ⚠️ PENDIENTE de volcar a `docs/brand-system.md` desde el otro PC |
-| 30 jun 2026 | Definido PROTOCOLO MULTI-EQUIPO (repo = fuente de verdad, disparo manual inicio/cierre, guardado incremental) |
+| 30 jun 2026 | Montado PROTOCOLO MULTI-EQUIPO (repo = fuente de verdad, gatillos manuales, guardado incremental). Creado `docs/brand-system.md` (esqueleto: tokens consolidados desde skills; TODO logo + carruseles). Decidido: fuente de marca = doc del repo, skill `look-and-feel` después |
+
+---
+
+## PRÓXIMO PASO (al retomar)
+
+1. En el otro PC: *"lee context.md"* → volcar logo + carruseles del 29-jun a `docs/brand-system.md` (rellenar secciones 1 y 6, revisar 2 y 3).
+2. Completado el brand-system: crear skill local `look-and-feel` apuntando al doc.
+3. Con marca coherente: atacar **P0 de antoniobenavides.com** (copy "próximamente", CTA post-descarga, consistencia botones CTA) — ESTO acerca al primer cierre.
