@@ -1,5 +1,5 @@
 # CONTEXTO — Antonio Benavides
-**Idioma de trabajo: español · Nombre preferido: Benavides · Actualizado: jun-2026**
+**Idioma de trabajo: español · Nombre preferido: Benavides · Actualizado: 30-jun-2026**
 
 > Archivo vivo. Refleja estado ACTUAL. Cifras conservadoras y deliberadas — no inflar.
 
@@ -39,10 +39,10 @@ Benavides trabaja desde **2 ordenadores** sobre este mismo repo. **Este `CONTEXT
 
 ### Prioridad 1 — antoniobenavides.com (hub premium de consultoría IA)
 - Flujo de captación de leads funcionando (Supabase Project B + Resend).
-- **Bloqueadores P0** (antes de lanzar LinkedIn Serie B):
-  1. Copy "próximamente" obsoleto
-  2. Falta CTA post-descarga
-  3. Inconsistencia de estilo en botones CTA
+- **Bloqueadores P0** (antes de lanzar LinkedIn Serie Recursos — arranca 14 jul):
+  1. ~~Copy "próximamente" obsoleto~~ → **RESUELTO** (RecursosGratuitos.tsx → btn-copper "Ver recursos gratuitos →", 29-jun)
+  2. Falta CTA post-descarga → **PENDIENTE**
+  3. ~~Inconsistencia de estilo en botones CTA~~ → **RESUELTO** (Recursos.tsx → btn-copper, 29-jun)
 - Destino final: asistente comercial que diagnostique, proponga y filtre clientes.
 - **Tech:** Lovable (source of truth de producción), Vite/React/TS, Supabase (Project A = Lovable · Project B = controlado), Vercel, Stripe, Resend.
 
@@ -58,10 +58,45 @@ Benavides trabaja desde **2 ordenadores** sobre este mismo repo. **Este `CONTEXT
 
 ## MARCA / LOOK & FEEL
 
-- **Fuente única de marca = `docs/brand-system.md`** (en este repo). NO dispersar la marca en skills locales (no sincronizan entre PCs).
-- Estado: esqueleto con tokens consolidados (paleta INK/cobre/teal, tipografías, doble-barra, tratamiento por superficie).
-- **Pendiente:** volcar **logo corporativo** y **formatos de carrusel LinkedIn** desde la sesión del 29-jun (otro PC).
-- Siguiente: tras completar el doc, crear skill local `look-and-feel` que apunte a él.
+- **Fuente única de marca = `docs/brand-system.md`** (en este repo). NO dispersar la marca en skills locales.
+- **Estado: v1.0 completo (30-jun-2026).** Logo, paleta multi-proyecto, tipografía y formatos de carrusel LinkedIn consolidados.
+- Paleta decidida: sistema verde multi-proyecto (Cyprus+Sand para hub · Tiffany+Dark Gray para vibecodinges · Luminous Moss+Silver para vibesplab).
+- Logo: monograma AB en círculo, Cyprus+Sand, PNG en workspace. SVG pendiente para rediseño web.
+- Rediseño web Cyprus/Sand: **no antes del primer cierre comercial.**
+- Siguiente: crear skill local `look-and-feel` apuntando a `docs/brand-system.md`.
+
+---
+
+## LINKEDIN — ESTADO ACTUAL (30-jun-2026)
+
+### Serie A (CTA → antoniobenavides.com)
+| Fecha | Post | Estado |
+|---|---|---|
+| mar 23 jun | Post 1 — Opener | ✅ Publicado |
+| vie 26 jun | Post 2 — Coste de no actuar | ✅ Publicado |
+| mar 30 jun | Post 3 — Herramienta vs sistema | ⏳ Programado |
+| vie 3 jul | Post 4 — Mentalidad de inversor | ⏳ Programado |
+| mar 7 jul | Post 5 — Cierre personal (versión genérica, sin ISO 17025) | ⏳ Programado |
+
+### Carruseles autoridad (lunes, CTA nulo o suave)
+| Fecha | Tema | Estado |
+|---|---|---|
+| lun 6 jul | Agente vs automatización | Copy listo · producción visual pendiente |
+| lun 13 jul | 5 filtros ROI | Copy listo · producción visual pendiente |
+| lun 20 jul | 6 dimensiones de madurez | Copy listo · producción visual pendiente |
+| lun 27 jul | Anatomía de un despliegue real | Copy listo · producción visual pendiente |
+
+Producción visual: herramienta externa (ChatGPT Image / Gamma / Canva AI). Brief estandarizado pendiente de ejemplos de carruseles anteriores que aportará Benavides.
+
+### Serie Recursos (CTA → /recursos · arranca 14 jul)
+| Fecha | Recurso | Estado |
+|---|---|---|
+| mar 14 jul | PDF 02 — En qué IA invertir | Copy listo · por programar |
+| mar 21 jul | PDF 01 — Evalúa tu madurez | Copy listo · por programar |
+| mar 28 jul | PDF 03 — De problema a agente | Copy listo · por programar |
+| mar 4 ago | PDF 04 — Gobernanza IA | Copy listo · por programar |
+
+Regla crítica: CTA siempre a `/recursos` con formulario — NUNCA al PDF directo.
 
 ---
 
@@ -84,7 +119,8 @@ Reglas: prestige pricing, números redondos, sin charm pricing, sin lista públi
 - 4 PDF lead magnets en `/recursos`
 - 2 CVs ATS-optimizados (variante generalista IA + variante finanzas+IA)
 - Portfolio: 25+ casos con métricas concretas
-- LinkedIn Serie A corriendo (→ julio). Serie B arranca tras buffer 4-5 días.
+- LinkedIn Serie A corriendo (→ 7 jul). Serie Recursos arranca 14 jul.
+- `docs/brand-system.md` v1.0 — sistema de marca completo
 
 ---
 
@@ -140,6 +176,7 @@ Reglas: prestige pricing, números redondos, sin charm pricing, sin lista públi
 - **Regla anti-dispersión:** no construir nueva infraestructura antes del primer cierre comercial.
 - **Neutralidad sobre Analytica** en todo contenido público mientras siga empleado.
 - Copilot Studio / M365: solo keyword ATS, no core ni especialidad principal.
+- **Post 5 LinkedIn (7 jul):** versión genérica confirmada — sin nombrar ISO 17025 explícitamente.
 
 ---
 
@@ -153,13 +190,15 @@ Reglas: prestige pricing, números redondos, sin charm pricing, sin lista públi
 | jun 2026 | Pricing comercial finalizado + 8 Skills + 2 CVs + portfolio |
 | jun 2026 | Posicionamiento final: "arquitecto de IA aplicada a negocio, con mentalidad de inversor" |
 | 29 jun 2026 | Creación de antonio-claude-workspace en GitHub + integración de contexto completo |
-| 29 jun 2026 | Trabajo de marca (logo, paleta, formatos de carruseles LinkedIn) — ⚠️ PENDIENTE de volcar a `docs/brand-system.md` desde el otro PC |
-| 30 jun 2026 | Montado PROTOCOLO MULTI-EQUIPO (repo = fuente de verdad, gatillos manuales, guardado incremental). Creado `docs/brand-system.md` (esqueleto: tokens consolidados desde skills; TODO logo + carruseles). Decidido: fuente de marca = doc del repo, skill `look-and-feel` después |
+| 29 jun 2026 | Marca: logo (monograma AB círculo Cyprus+Sand), paleta multi-proyecto (sistema verde), formatos carrusel LinkedIn. Copy de 4 carruseles julio + 4 posts Serie Recursos listos. P0 web resueltos (RecursosGratuitos.tsx + Recursos.tsx → btn-copper, desplegado en producción). |
+| 30 jun 2026 | Montado PROTOCOLO MULTI-EQUIPO. Creado docs/brand-system.md v1.0 completo (logo, paleta, tipografía, carruseles). |
 
 ---
 
 ## PRÓXIMO PASO (al retomar)
 
-1. En el otro PC: *"lee context.md"* → volcar logo + carruseles del 29-jun a `docs/brand-system.md` (rellenar secciones 1 y 6, revisar 2 y 3).
-2. Completado el brand-system: crear skill local `look-and-feel` apuntando al doc.
-3. Con marca coherente: atacar **P0 de antoniobenavides.com** (copy "próximamente", CTA post-descarga, consistencia botones CTA) — ESTO acerca al primer cierre.
+1. **P0 pendiente:** CTA post-descarga en `/recursos` (único bloqueador restante antes de 14 jul).
+2. **LinkedIn carruseles:** producir visualmente los 4 de julio con herramienta externa (pendiente brief estandarizado — Benavides aportará ejemplos de carruseles anteriores).
+3. **Serie Recursos:** programar los 4 posts (14, 21, 28 jul · 4 ago) en LinkedIn scheduler.
+4. **Skill `look-and-feel`:** crear apuntando a `docs/brand-system.md` (baja prioridad).
+5. **Sesión pendiente:** definir modelo de facturación y cobro (gap comercial urgente antes del primer deal).
