@@ -1,5 +1,5 @@
 # CONTEXTO — Antonio Benavides
-**Idioma de trabajo: español · Nombre preferido: Benavides · Actualizado: 30-jun-2026**
+**Idioma de trabajo: español · Nombre preferido: Benavides · Actualizado: 01-jul-2026**
 
 > Archivo vivo. Refleja estado ACTUAL. Cifras conservadoras y deliberadas — no inflar.
 
@@ -65,29 +65,31 @@ Benavides trabaja desde **2 ordenadores** sobre este mismo repo. **Este `CONTEXT
 - **PNG logo** ⚠️ PENDIENTE subida manual: arrastrar `look and feel/ChatGPT Image 29 jun 2026, 18_17_29.png` a `assets/logo/logo-ab.png` en GitHub web.
 - Paleta decidida: Combo 04 Cyprus+Sand (hub) · Combo 01 Tiffany+Dark Gray (vibecodinges) · Combo 08 Silver+Luminous Moss (vibesplab).
 - Rediseño web Cyprus/Sand: **no antes del primer cierre comercial.**
+- **Plantilla de carrusel LinkedIn VALIDADA (01-jul) ⭐** — el carrusel "Sonnet 5 / verificador" es la referencia de oro. Especificación en `brand-system.md` §6. Producible sin herramienta externa: HTML+CSS renderizado a PNG con fuentes embebidas (Lora para titulares como sustituto de Playfair, Poppins para cuerpo), fondos alternando Cyprus/Sand, wordmark AB en esquina. Ver HISTORIAL 01-jul.
 
 ---
 
-## LINKEDIN — ESTADO ACTUAL (30-jun-2026)
+## LINKEDIN — ESTADO ACTUAL (01-jul-2026)
 
 ### Serie A (CTA → antoniobenavides.com)
 | Fecha | Post | Estado |
 |---|---|---|
 | mar 23 jun | Post 1 — Opener | ✅ Publicado |
 | vie 26 jun | Post 2 — Coste de no actuar | ✅ Publicado |
-| mar 30 jun | Post 3 — Herramienta vs sistema | ⏳ Programado |
+| mar 30 jun | Post 3 — Herramienta vs sistema | ✅ Publicado |
 | vie 3 jul | Post 4 — Mentalidad de inversor | ⏳ Programado |
 | mar 7 jul | Post 5 — Cierre personal (versión genérica, sin ISO 17025) | ⏳ Programado |
 
 ### Carruseles autoridad (lunes, CTA nulo o suave)
 | Fecha | Tema | Estado |
 |---|---|---|
-| lun 6 jul | Agente vs automatización | Copy listo · producción visual pendiente |
+| ~~mié 1 jul~~ | **Sonnet 5 / verificador antes que el agente** (reactivo a lanzamiento Sonnet 5) | ✅ **Programado 1 jul 9:00** — título doc `Sonnet-5-y-el-verificador-antes-que-el-agente`, 8 slides, plantilla Cyprus/Sand + loop en portada |
+| ~~lun 6 jul~~ | ~~Agente vs automatización~~ | ⚠️ **CUBIERTO por el carrusel del 1 jul** (mismo territorio conceptual: agente vs automatización + verificación). Slot 6 jul LIBRE o reasignar a otro tema. |
 | lun 13 jul | 5 filtros ROI | Copy listo · producción visual pendiente |
 | lun 20 jul | 6 dimensiones de madurez | Copy listo · producción visual pendiente |
 | lun 27 jul | Anatomía de un despliegue real | Copy listo · producción visual pendiente |
 
-Producción visual: herramienta externa (ChatGPT Image / Gamma / Canva AI). Brief estandarizado pendiente de ejemplos de carruseles anteriores que aportará Benavides.
+Producción visual: plantilla propia validada (HTML→PNG, ver §MARCA) o herramienta externa. Brief estandarizado pendiente de ejemplos de carruseles anteriores que aportará Benavides.
 
 ### Serie Recursos (CTA → /recursos · arranca 14 jul)
 | Fecha | Recurso | Estado |
@@ -121,6 +123,7 @@ Reglas: prestige pricing, números redondos, sin charm pricing, sin lista públi
 - 2 CVs ATS-optimizados (variante generalista IA + variante finanzas+IA)
 - Portfolio: 25+ casos con métricas concretas
 - LinkedIn Serie A corriendo (→ 7 jul). Serie Recursos arranca 14 jul.
+- **Carrusel LinkedIn "Sonnet 5 / verificador"** (1 jul) — primera pieza con la plantilla de marca validada. Plantilla reutilizable para futuros carruseles.
 - `docs/brand-system.md` v1.1 — sistema de marca completo y corregido
 - `docs/paletas-combos-colores.md` — catálogo de 10 combos de color
 - Skill `look-and-feel` — marca y branding operativos y cerrados
@@ -180,6 +183,7 @@ Reglas: prestige pricing, números redondos, sin charm pricing, sin lista públi
 - **Neutralidad sobre Analytica** en todo contenido público mientras siga empleado.
 - Copilot Studio / M365: solo keyword ATS, no core ni especialidad principal.
 - **Post 5 LinkedIn (7 jul):** versión genérica confirmada — sin nombrar ISO 17025 explícitamente.
+- **Contenido reactivo a actualidad:** válido y de alto valor (posiciona en frontera del sector). El carrusel de Sonnet 5 (1 jul) es el precedente. Ancla siempre a experiencia verificable propia; nunca logos de terceros en portada (posiciona como reactivo, no como autoridad).
 
 ---
 
@@ -196,6 +200,7 @@ Reglas: prestige pricing, números redondos, sin charm pricing, sin lista públi
 | 29 jun 2026 | Marca: logo, paleta multi-proyecto, formatos carrusel LinkedIn. Copy carruseles julio + posts Serie Recursos listos. P0 web resueltos. |
 | 30 jun 2026 | Protocolo multi-equipo. `docs/brand-system.md` v1.0. |
 | 30 jun 2026 | Marca y branding CERRADOS: skill `look-and-feel`, `docs/paletas-combos-colores.md`, `brand-system.md` v1.1 con logo corregido (monograma AB geométrico, no serif ni círculo). PNG logo pendiente subida manual a `assets/logo/logo-ab.png`. |
+| 01 jul 2026 | **Carrusel LinkedIn reactivo a Sonnet 5** (lanzado 30 jun por Anthropic). Tesis: "el verificador va antes que el agente" — su filosofía agéntica coincide con /loop, /goal y verificación adversarial de Claude Code. 8 slides con plantilla de marca (Cyprus/Sand alternando, Lora titulares, Poppins cuerpo, loop en portada, wordmark AB). Producción propia HTML→PNG→PDF (sin herramienta externa). Programado 1 jul 9:00, título doc `Sonnet-5-y-el-verificador-antes-que-el-agente`. Post 3 Serie A publicado. Plantilla de carrusel validada como referencia de oro. |
 
 ---
 
@@ -203,6 +208,7 @@ Reglas: prestige pricing, números redondos, sin charm pricing, sin lista públi
 
 0. ⚠️ **ACCIÓN MANUAL PENDIENTE:** subir PNG del logo a GitHub — arrastrar `look and feel/ChatGPT Image 29 jun 2026, 18_17_29.png` a `assets/logo/logo-ab.png` desde la web de GitHub.
 1. **P0 pendiente:** CTA post-descarga en `/recursos` (único bloqueador antes de 14 jul).
-2. **LinkedIn carruseles:** producir visualmente los 4 de julio (pendiente brief estandarizado + ejemplos de carruseles anteriores de Benavides).
-3. **Serie Recursos:** programar los 4 posts (14, 21, 28 jul · 4 ago) en LinkedIn scheduler.
-4. **Sesión pendiente:** definir modelo de facturación y cobro (gap comercial urgente antes del primer deal).
+2. **Slot carrusel 6 jul:** decidir — dejar libre o reasignar tema (el "Agente vs automatización" quedó cubierto por el de Sonnet 5).
+3. **LinkedIn carruseles:** producir visualmente los de julio (13, 20, 27) con la plantilla validada (HTML→PNG) o herramienta externa.
+4. **Serie Recursos:** programar los 4 posts (14, 21, 28 jul · 4 ago) en LinkedIn scheduler.
+5. **Sesión pendiente:** definir modelo de facturación y cobro (gap comercial urgente antes del primer deal).
