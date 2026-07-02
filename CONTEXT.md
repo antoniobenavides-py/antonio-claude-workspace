@@ -1,5 +1,5 @@
 # CONTEXTO — Antonio Benavides
-**Idioma de trabajo: español · Nombre preferido: Benavides · Actualizado: 02-jul-2026**
+**Idioma de trabajo: español · Nombre preferido: Benavides · Actualizado: 02-jul-2026 (tarde)**
 
 > Archivo vivo. Refleja estado ACTUAL. Cifras conservadoras y deliberadas — no inflar.
 
@@ -32,25 +32,25 @@ Benavides trabaja desde **2 ordenadores** sobre este mismo repo. **Este `CONTEXT
 **Cerrar el PRIMER deal comercial.** Billing en cero. Esto es el hito #1.
 - Búsqueda de rol IA en paralelo (outbound + inbound). Criterio: valor estratégico, no salario puro.
 - Objetivo económico: ~50.000 €/año como suelo. ⚠️ La cifra 150K es ruido obsoleto — no usarla.
-- **Gap crítico para el primer cierre: Stripe sin configurar.** Catálogo y mecánica ya especificados (ver §STACK), falta ejecución manual en el panel (~10 min).
+- **Gap crítico para el primer cierre: Stripe sin configurar.** Catálogo y mecánica ya especificados (ver §PRICING), falta ejecución manual en el panel (~10 min).
 
 ---
 
 ## PROYECTOS ACTIVOS
 
 ### Prioridad 1 — antoniobenavides.com (hub premium de consultoría IA)
-- Flujo de captación de leads funcionando (Supabase Project B + Resend). **Verificado en producción 02-jul: descargas de recursos + leads OK.**
-- **Rediseño look&feel Cyprus/Sand: COMPLETADO Y DESPLEGADO (02-jul)** — ver §MARCA.
+- Flujo de captación de leads funcionando (Supabase Project B + Resend). Verificado en producción 02-jul: descargas de recursos + leads OK.
+- **Rediseño look&feel Cyprus/Sand: COMPLETADO Y DESPLEGADO (02-jul).**
+- **Blog activo con pieza reactiva Fable 5 publicada y desplegada (02-jul)** — ver §LINKEDIN y §HISTORIAL.
 - **Bloqueadores P0** (antes de lanzar LinkedIn Serie Recursos — arranca 14 jul):
   1. ~~Copy "próximamente" obsoleto~~ → **RESUELTO**
-  2. **Falta CTA post-descarga en `/recursos`** → **PENDIENTE — único bloqueador real restante**
+  2. **Falta CTA post-descarga en `/recursos`** (`RecursosLeadModal.tsx`) → **PENDIENTE — único bloqueador real restante**
   3. ~~Inconsistencia de estilo en botones CTA~~ → **RESUELTO**
 - Destino final: asistente comercial que diagnostique, proponga y filtre clientes.
 - **Tech:** Lovable (source of truth de producción), Vite/React/TS, Supabase (Project A = Lovable · Project B = controlado), Vercel, Stripe (pendiente config), Resend.
 
 ### Prioridad 2 — vibecodinges.com
 - Captación / educación práctica / herramientas IA. NO prioritaria ahora.
-- Pendiente: rebuild web + fix home CTA/nav. Idea: recomendador de LLMs con login Google.
 
 ### Deprioritizados
 - `/triaje` (TRIAJE//IA) — en pruebas, no en producción.
@@ -58,34 +58,35 @@ Benavides trabaja desde **2 ordenadores** sobre este mismo repo. **Este `CONTEXT
 
 ---
 
-## MARCA / LOOK & FEEL — CERRADO Y DESPLEGADO ✅ (02-jul-2026)
+## MARCA / LOOK & FEEL ✅ (02-jul-2026)
 
-- **Fuente única de marca = `docs/brand-system.md`** v1.1 (30-jun-2026).
+- **Fuente única de marca = `docs/brand-system.md`** v1.1 (30-jun-2026). ⚠️ **§logo DESACTUALIZADO** — ver punto siguiente.
+- **LOGO ACTUALIZADO (02-jul tarde):** nueva versión = **badge circular Cyprus `#004741` con monograma AB angular en Sand `#F0EDE4`** (la versión anterior era sin círculo; `brand-system.md` aún describe "sin círculo" — pendiente corregir esa línea del doc).
+- ⚠️ **DESINCRONIZACIÓN DE BINARIOS:** el logo nuevo se cambió **directamente en Lovable** (favicon activo en producción), pero NO está en GitHub. Los `logo-ab.png` de ambos repos son la versión antigua. **Acción manual pendiente de Benavides** (mismo archivo, mismo nombre `logo-ab.png`, reemplaza al subirse):
+  1. Repo web: https://github.com/antoniobenavides-py/antoniobenavides.com/upload/main/public
+  2. Repo workspace: https://github.com/antoniobenavides-py/antonio-claude-workspace/upload/main/assets/logo
+  Hasta que se haga, cualquier deploy desde GitHub podría re-desplegar el logo antiguo o divergir. Regla vigente: binarios nunca por API, solo GitHub web UI o Lovable.
 - **Rediseño completo Cyprus/Sand (Combo 04) en antoniobenavides.com — EN PRODUCCIÓN.**
-  - Migrado: `src/index.css` (tokens → todas las páginas interiores), `Home.tsx` (~200 hex + canvas + partículas), `ChatWidget.tsx`, `WizardModal.tsx`, `ServiciosIA.tsx` (pricing, ver abajo).
-  - Auditadas y confirmadas token-driven sin residuos de paleta antigua: Header, Footer, AgentesCopilotos, IAOperaciones, resto de páginas interiores.
-  - CTA (`btn-copper`) = Sand sólido `#F0EDE4` sobre texto Cyprus `#004741` (nombre de clase conservado por compatibilidad, valor migrado).
-  - Commits clave: `ce6795c` (tokens), `d8288ba` (Home), `3c03440` (ChatWidget), `60f808a` (WizardModal), `4205a7a` (pricing ServiciosIA).
-- **Logo:** monograma AB geométrico, variante DARK (fondo Cyprus, símbolo Sand). **PNG subido y activo:** `public/logo-ab.png` en el repo de la web (antoniobenavides.com), no solo en workspace. Favicon + `apple-touch-icon` + `theme-color` cableados en `index.html` (commit `2b9f2b1`) y desplegados.
-- **Catálogo de paletas** — `docs/paletas-combos-colores.md` (10 combos con asignación por proyecto).
-- Paleta por proyecto: Combo 04 Cyprus+Sand (hub, ya en producción) · Combo 01 Tiffany+Dark Gray (vibecodinges) · Combo 08 Silver+Luminous Moss (vibesplab).
+  - Migrado: `src/index.css` (tokens), `Home.tsx`, `ChatWidget.tsx`, `WizardModal.tsx`, `ServiciosIA.tsx` (pricing).
+  - CTA (`btn-copper`) = Sand sólido sobre texto Cyprus (nombre de clase conservado, valor migrado).
+  - Commits clave: `ce6795c` (tokens), `d8288ba` (Home), `3c03440` (ChatWidget), `60f808a` (WizardModal), `4205a7a` (pricing), `2b9f2b1` (favicon/theme-color).
 - **Plantilla de carrusel LinkedIn VALIDADA (01-jul) ⭐** — especificación en `brand-system.md` §6.
+- Paleta por proyecto: Combo 04 Cyprus+Sand (hub, en producción) · Combo 01 Tiffany+Dark Gray (vibecodinges) · Combo 08 Silver+Luminous Moss (vibesplab).
 
 ---
 
 ## PRICING COMERCIAL (confirmado, todos + IVA) — SINCRONIZADO EN WEB 02-jul
 
-| Servicio | Precio | Estado en `/servicios-ia` |
-|----------|--------|---|
-| Diagnóstico estratégico | 750 € (deducible íntegro contra implementación) | ✅ Corregido (antes decía "desde 1.500€", desactualizado) |
-| Piloto | Desde 3.500 € | ✅ |
-| Sistema completo | Desde 6.000 € | ✅ |
-| Advisory | 1.900 €/mes | ✅ |
+| Servicio | Precio |
+|----------|--------|
+| Diagnóstico estratégico | 750 € (deducible íntegro contra implementación) |
+| Piloto | Desde 3.500 € |
+| Sistema completo | Desde 6.000 € |
+| Advisory | 1.900 €/mes |
 
-Reglas: prestige pricing, números redondos, sin charm pricing, sin lista pública, siempre + IVA visible.
+Reglas: prestige pricing, números redondos, sin charm pricing, siempre + IVA visible.
 
-**Stripe — catálogo especificado, ejecución pendiente (panel, ~10 min):**
-4 productos tax-exclusive (Diagnóstico 750€ pago único, Piloto 3.500€, Sistema 6.000€, Advisory 1.900€/mes recurrente) + Payment Links para Diagnóstico y Advisory + Invoicing para Piloto/Sistema + cupón único "Deducible diagnóstico" 750€. Activar Stripe Tax (tax behavior: exclusive) antes de crear productos.
+**Stripe — catálogo especificado, ejecución pendiente (panel, ~10 min):** 4 productos tax-exclusive + Payment Links (Diagnóstico y Advisory) + Invoicing (Piloto/Sistema) + cupón único "Deducible diagnóstico" 750€. Activar Stripe Tax (tax behavior: exclusive) antes de crear productos.
 
 ---
 
@@ -98,13 +99,18 @@ Reglas: prestige pricing, números redondos, sin charm pricing, sin lista públi
 | vie 26 jun | Post 2 — Coste de no actuar | ✅ Publicado |
 | mar 30 jun | Post 3 — Herramienta vs sistema | ✅ Publicado |
 | vie 3 jul | Post 4 — Mentalidad de inversor | ⏳ Programado |
-| mar 7 jul | Post 5 — Cierre personal (versión genérica, sin ISO 17025) | ⏳ Programado |
+| mar 7 jul | Post 5 — Cierre personal (versión genérica) | ⏳ Programado |
 
-### Carruseles autoridad (lunes, CTA nulo o suave)
+### Pieza reactiva Fable 5 (02-jul) — fuera de calendario, con ventana temporal
+- **Blog publicado y desplegado:** `antoniobenavides.com/blog/optimizar-sesiones-claude-fable-5` — "Cómo estructurar sesiones con Claude Fable 5: objetivo, plan y verificación". Método evergreen + gancho 7-jul. Datos verificados: vuelta 1-jul, incluido hasta 7-jul con tope 50% del límite semanal (Pro/Max/Team), después usage credits.
+- **Post LinkedIn entregado en bloques copiables** (cuerpo sin link + primer comentario con link al blog). Imagen: captura promocional de reapertura de Fable 5.
+- **Recomendación de publicación: 02-jul 17:30–18:00** (no el 6 — ventana muerta; no chocar con Serie A post 4 del 3-jul 9:00). Estado de publicación: en manos de Benavides.
+
+### Carruseles autoridad (lunes)
 | Fecha | Tema | Estado |
 |---|---|---|
-| ~~mié 1 jul~~ | Sonnet 5 / verificador antes que el agente | ✅ Programado 1 jul 9:00 |
-| lun 6 jul | Slot libre (cubierto conceptualmente por el del 1 jul) | ⚠️ Sin decidir — **candidato natural: blog Fable 5 (ver PENDIENTE DE DECISIÓN)** |
+| mié 1 jul | Sonnet 5 / verificador antes que el agente | ✅ Programado 1 jul 9:00 |
+| lun 6 jul | Slot libre | Sin decidir (el blog Fable 5 ya salió como pieza propia — no reciclarlo aquí) |
 | lun 13 jul | 5 filtros ROI | Copy listo · producción visual pendiente |
 | lun 20 jul | 6 dimensiones de madurez | Copy listo · producción visual pendiente |
 | lun 27 jul | Anatomía de un despliegue real | Copy listo · producción visual pendiente |
@@ -121,36 +127,27 @@ Regla crítica: CTA siempre a `/recursos` con formulario — NUNCA al PDF direct
 
 ---
 
-## PENDIENTE DE DECISIÓN — propuesto 02-jul, sin confirmar por Benavides
-
-**Blog "cómo optimizar sesiones en Fable 5 antes del 7 jul"** + post LinkedIn con foto oficial de reapertura.
-- Contexto verificado por búsqueda web: Fable 5 volvió el 1-jul tras 18 días de suspensión por controles de exportación (levantados 30-jun). Ventana real: hasta el 7-jul con tope del 50% del límite semanal en Pro/Max/Team (NO "Plus" — ese plan no existe en Claude); después pasa a usage credits a $10/$50 por Mtok, 2× Opus 4.8 y ~5× Sonnet 5.
-- Veredicto dado: viable SOLO si sale el mismo día 2-jul por la tarde (no el 6, que mata la ventana de utilidad a 1 día). Ángulo recomendado: método evergreen (objetivo → plan → verificación, aplicado a Fable 5) en vez de "trucos de promo", para que sobreviva a la fecha.
-- **No ejecutado — pendiente confirmación explícita de Benavides.** Si no se confirma en las próximas horas, la ventana de valor se cierra sola y el ítem debe darse por caducado, no arrastrarse a sesiones futuras como si siguiera vigente.
-
----
-
 ## ACTIVOS YA CONSTRUIDOS
 
-- 9 Claude Skills: `deploy-produccion`, `traspaso-sesion`, `log-construccion`, `propuesta-comercial`, `arquitectura-agentes`, `cv-portfolio`, `post-linkedin`, `lead-magnet-pdf`, `look-and-feel`
-- 4 PDF lead magnets en `/recursos` — descarga + captura de lead verificada funcionando en producción (02-jul)
-- 2 CVs ATS-optimizados (variante generalista IA + variante finanzas+IA)
-- Portfolio: 25+ casos con métricas concretas
-- LinkedIn Serie A corriendo (→ 7 jul). Serie Recursos arranca 14 jul.
+- 9 Claude Skills instalados (`deploy-produccion`, `traspaso-sesion`, `log-construccion`, `propuesta-comercial`, `arquitectura-agentes`, `cv-portfolio`, `post-linkedin`, `lead-magnet-pdf`, `look-and-feel`)
+- 4 PDF lead magnets en `/recursos` — flujo verificado en producción
+- Blog con 7 entradas (nueva 02-jul: sesiones Fable 5 — primera pieza reactiva del blog, en sitemap y listado)
+- 2 CVs ATS-optimizados · Portfolio 25+ casos
 - Carrusel LinkedIn "Sonnet 5 / verificador" (1 jul) — plantilla de marca reutilizable
-- `docs/brand-system.md` v1.1 — sistema de marca completo, **ya reflejado 1:1 en la web de producción**
-- `docs/paletas-combos-colores.md` — catálogo de 10 combos de color
-- Rediseño Cyprus/Sand de antoniobenavides.com — **desplegado y verificado en producción**
+- `docs/brand-system.md` v1.1 (pendiente micro-fix §logo) · `docs/paletas-combos-colores.md`
+- Rediseño Cyprus/Sand desplegado + favicon con logo nuevo (vía Lovable)
 
 ---
 
 ## STACK TÉCNICO
 
-- **Lovable = source of truth de producción.** Cambios vía GitHub `create_or_update_file` (sincroniza a preview) + `Lovable:deploy_project` (publica a producción, gratis). Binarios (PDF, PNG) solo por GitHub web UI.
-- Vite + React + TypeScript · Supabase · Vercel · Stripe (config pendiente) · Resend
-- LLMs: OpenAI, Claude, Gemini, open-source. Opus para arquitectura · Sonnet para ejecución mecánica.
+- **Lovable = source of truth de producción.** Flujo sin créditos: GitHub `create_or_update_file` (sincroniza a preview) + `Lovable:deploy_project` (publica, gratis). **Binarios solo por GitHub web UI o Lovable — nunca por API.**
+- **Proyecto Lovable ID: `36b0aa48-f4a0-477a-a2df-51dd31764de7`** (verificado: deploys 02-jul OK).
+- Vite + React + TypeScript · Supabase (A Lovable / B `saxagolemwmfroxelscd`) · Vercel · Stripe (config pendiente) · Resend
+- `Lovable` MCP: fallos intermitentes de aprobación en llamadas de lectura (`list_workspaces`); `deploy_project` no afectado — reintentar, no bloquea.
+- `GitHub:search_code` NO indexa los repos privados — auditar leyendo archivos.
+- Opus para arquitectura · Sonnet para ejecución mecánica.
 - **Filosofía:** sistemas agénticos con loop auto-verificable, NO automatizaciones rígidas.
-- `Lovable` MCP sufre fallos intermitentes de aprobación ("No approval received") en llamadas de solo lectura (`list_workspaces`); `deploy_project` no se ha visto afectado — reintentar si falla, no bloquea el flujo crítico.
 
 ---
 
@@ -158,7 +155,7 @@ Regla crítica: CTA siempre a `/recursos` con formulario — NUNCA al PDF direct
 
 - ~1.660 €/mes neto. Runway 3-6 meses cash. Patrimonio ~65-70K €. **Deuda 0.**
 - Vive en casa de padres — costes fijos bajos. Sustenta pragmatismo real, no pasividad.
-- Cartera inversión: Alphabet, Meta, Amazon, Microsoft, BTC. DCA ≥500 €/mes día 1, largo plazo (5+ años).
+- Cartera: Alphabet, Meta, Amazon, Microsoft, BTC. DCA ≥500 €/mes día 1, largo plazo.
 - Mentores: Fernando Sánchez (IDC, inversión) · Jon Hernández / BigSchool (IA).
 - Rutinas no negociables: café 6AM aprendiendo · alimentación sana · viernes tarde con pareja · fines de semana en familia.
 
@@ -170,8 +167,8 @@ Regla crítica: CTA siempre a `/recursos` con formulario — NUNCA al PDF direct
 2. **Riesgo #1: dispersión.** Pregunta reguladora: *¿qué tiene más ROI estratégico AHORA?*
 3. **NO complacer.** Crítica directa, sin adulación, sin relleno.
 4. **Español siempre. Nombre: Benavides.**
-5. **Formato:** conciso y estructurado por defecto. Extendido solo si pide "desarrolla" o "profundiza". Sin explicar conceptos básicos de IA.
-6. **LinkedIn:** posts cortos, disruptivos, autoridad primero, casos reales. Links en primer comentario (nunca en el cuerpo). CTA a antoniobenavides.com.
+5. **Formato:** conciso y estructurado por defecto. Extendido solo si pide "desarrolla" o "profundiza".
+6. **LinkedIn:** posts cortos, disruptivos, autoridad primero, casos reales. Links en primer comentario. CTA a antoniobenavides.com.
 7. **Sesión larga:** fases numeradas con checkpoints (`✅ FASE N`). Al retomar, identificar último checkpoint y continuar.
 8. **Marco inversor** en cada decisión: ¿construye activo o consume tiempo? ¿ROI real a 5 años?
 
@@ -179,20 +176,17 @@ Regla crítica: CTA siempre a `/recursos` con formulario — NUNCA al PDF direct
 
 ## TAXONOMÍA DE CIFRAS (no inflar)
 
-- 7 agentes en producción
-- 25+ casos totales (agentes + copilotos + flows)
-- ~60% adopción orgánica
-- ~50K€ objetivo anual (suelo, no techo)
+- 7 agentes en producción · 25+ casos totales · ~60% adopción orgánica · ~50K€ objetivo anual (suelo).
 
 ---
 
 ## DECISIONES ESTRATÉGICAS ACTIVAS
 
-- **Regla anti-dispersión:** no construir nueva infraestructura antes del primer cierre comercial. **Excepción consciente registrada 01-jul:** Benavides decidió explícitamente priorizar el rediseño look&feel antes del P0 comercial, pese a advertencia de dispersión — decisión suya, ejecutada, ya cerrada.
+- **Regla anti-dispersión:** no construir nueva infraestructura antes del primer cierre comercial. Excepciones conscientes ya ejecutadas y cerradas: rediseño Cyprus/Sand (01-02 jul) y blog reactivo Fable 5 (02-jul, justificado por ventana temporal + tráfico a la web).
 - **Neutralidad sobre Analytica** en todo contenido público mientras siga empleado.
-- Copilot Studio / M365: solo keyword ATS, no core ni especialidad principal.
-- **Post 5 LinkedIn (7 jul):** versión genérica confirmada — sin nombrar ISO 17025 explícitamente.
-- **Contenido reactivo a actualidad:** válido y de alto valor. Precedente: carrusel Sonnet 5 (1 jul). Ancla siempre a experiencia verificable propia; nunca logos de terceros en portada.
+- Copilot Studio / M365: solo keyword ATS.
+- **Post 5 LinkedIn (7 jul):** versión genérica confirmada — sin nombrar ISO 17025.
+- **Contenido reactivo a actualidad:** validado dos veces (carrusel Sonnet 5, blog Fable 5). Ancla siempre a experiencia verificable propia; datos de producto siempre verificados por búsqueda antes de publicar (corregido "Plus"→Pro/Max/Team, tope 50%).
 
 ---
 
@@ -201,25 +195,22 @@ Regla crítica: CTA siempre a `/recursos` con formulario — NUNCA al PDF direct
 | Fecha | Hito |
 |-------|------|
 | 21-22 jun 2026 | Rebuild antoniobenavides.com: dark theme, CTAs, ScrollToTop, wizard captación end-to-end |
-| jun 2026 | Debug flujo captación (Supabase equivocado → Project B + Edge Function + Resend) |
-| jun 2026 | Auditoría P0/P1/P2: Home.tsx, Recursos.tsx, ServiciosIA.tsx |
-| jun 2026 | Pricing comercial finalizado + 8 Skills + 2 CVs + portfolio |
-| jun 2026 | Posicionamiento final: "arquitecto de IA aplicada a negocio, con mentalidad de inversor" |
-| 29 jun 2026 | Creación de antonio-claude-workspace en GitHub + integración de contexto completo |
-| 29 jun 2026 | Marca: logo, paleta multi-proyecto, formatos carrusel LinkedIn. Copy carruseles julio + posts Serie Recursos listos. P0 web resueltos. |
-| 30 jun 2026 | Protocolo multi-equipo. `docs/brand-system.md` v1.0. |
-| 30 jun 2026 | Marca y branding CERRADOS: skill `look-and-feel`, `docs/paletas-combos-colores.md`, `brand-system.md` v1.1. PNG logo pendiente subida manual. |
-| 01 jul 2026 | Carrusel LinkedIn reactivo a Sonnet 5, programado 1 jul 9:00. Plantilla de carrusel validada como referencia de oro. Stripe: catálogo y mecánica de cobro especificados (ejecución manual pendiente). |
-| 02 jul 2026 | **Rediseño Cyprus/Sand DESPLEGADO A PRODUCCIÓN.** index.css, Home.tsx, ChatWidget, WizardModal migrados. Logo PNG subido y renombrado en repo de la web; favicon + theme-color activos. Pricing `/servicios-ia` corregido (750€ diagnóstico, no 1.500€ — dato desactualizado). Verificado en producción: descargas de recursos + captura de leads funcionando. Propuesto (sin confirmar) blog + post LinkedIn sobre optimización de sesiones Fable 5 antes del 7-jul. |
+| jun 2026 | Debug flujo captación (Project B + Edge Function + Resend) |
+| jun 2026 | Auditoría P0/P1/P2 · Pricing finalizado · 8 Skills · 2 CVs · portfolio |
+| 29 jun 2026 | Workspace repo creado · Marca: logo, paletas, formatos carrusel · P0 web resueltos |
+| 30 jun 2026 | Protocolo multi-equipo · `brand-system.md` v1.0→v1.1 · skill `look-and-feel` |
+| 01 jul 2026 | Carrusel reactivo Sonnet 5 programado (1 jul 9:00) · plantilla validada ⭐ · spec Stripe |
+| 02 jul 2026 | **Rediseño Cyprus/Sand DESPLEGADO** (tokens, Home, ChatWidget, WizardModal) · favicon+logo · pricing `/servicios-ia` corregido (750€ diagnóstico) · flujo recursos+leads verificado en producción |
+| 02 jul 2026 (tarde) | **Blog Fable 5 publicado y desplegado** (`/blog/optimizar-sesiones-claude-fable-5`: entrada + listado + ruta + sitemap, commits `624e79f`·`1b72745`·`3bdf9c0`·`c3cdbff`, deploy `ebfb769`) · post LinkedIn entregado (publicación recomendada 17:30-18:00 del 2-jul) · **logo sustituido por badge circular directamente en Lovable → binarios de GitHub desincronizados (acción manual pendiente)** |
 
 ---
 
 ## PRÓXIMO PASO (al retomar)
 
-1. **P0 real y único bloqueador de Serie Recursos (14 jul):** CTA post-descarga en `RecursosLeadModal.tsx` — tras la descarga solo hay botón, falta puente hacia diagnóstico/servicios.
-2. **Stripe:** ejecutar catálogo en panel (~10 min) — condición para poder cobrar el mismo día que un lead cierre.
-3. **Blog Fable 5:** si Benavides no lo confirma pronto, dar la ventana por caducada — no proponerlo de nuevo pasado el 7-jul.
-4. **Slot carrusel 6 jul:** decidir tema (libre, o Fable 5 si se confirma a tiempo).
-5. **LinkedIn carruseles:** producir visualmente los de julio (13, 20, 27).
-6. **Serie Recursos:** programar los 4 posts (14, 21, 28 jul · 4 ago) en LinkedIn scheduler.
-7. **Modelo de facturación y cobro:** definir junto con la ejecución de Stripe.
+0. ⚠️ **ACCIÓN MANUAL (Benavides):** subir el logo nuevo (badge circular) como `logo-ab.png` a: (1) https://github.com/antoniobenavides-py/antoniobenavides.com/upload/main/public y (2) https://github.com/antoniobenavides-py/antonio-claude-workspace/upload/main/assets/logo — resincroniza GitHub con Lovable.
+1. **Publicar post LinkedIn Fable 5** (hoy 17:30-18:00) con link en primer comentario fijado. Después del 7-jul la pieza queda como SEO evergreen; no re-promocionar con el gancho temporal.
+2. **P0:** CTA post-descarga en `RecursosLeadModal.tsx` (bloqueador Serie Recursos, 14 jul).
+3. **Stripe:** ejecutar catálogo en panel (~10 min).
+4. **Micro-fix:** `docs/brand-system.md` §logo — sustituir "sin círculo" por descripción del badge circular actual.
+5. **Slot carrusel 6 jul:** decidir tema.
+6. **Carruseles 13/20/27 jul:** producción visual. **Serie Recursos:** programar 4 posts.
