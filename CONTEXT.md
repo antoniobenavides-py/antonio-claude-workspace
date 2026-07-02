@@ -1,5 +1,5 @@
 # CONTEXTO — Antonio Benavides
-**Idioma de trabajo: español · Nombre preferido: Benavides · Actualizado: 02-jul-2026 (tarde)**
+**Idioma de trabajo: español · Nombre preferido: Benavides · Actualizado: 02-jul-2026 (cierre tarde)**
 
 > Archivo vivo. Refleja estado ACTUAL. Cifras conservadoras y deliberadas — no inflar.
 
@@ -41,7 +41,7 @@ Benavides trabaja desde **2 ordenadores** sobre este mismo repo. **Este `CONTEXT
 ### Prioridad 1 — antoniobenavides.com (hub premium de consultoría IA)
 - Flujo de captación de leads funcionando (Supabase Project B + Resend). Verificado en producción 02-jul: descargas de recursos + leads OK.
 - **Rediseño look&feel Cyprus/Sand: COMPLETADO Y DESPLEGADO (02-jul).**
-- **Blog activo con pieza reactiva Fable 5 publicada y desplegada (02-jul)** — ver §LINKEDIN y §HISTORIAL.
+- **Blog activo con pieza reactiva Fable 5 publicada, desplegada y VERIFICADA VISUALMENTE en producción por Benavides (02-jul tarde).**
 - **Bloqueadores P0** (antes de lanzar LinkedIn Serie Recursos — arranca 14 jul):
   1. ~~Copy "próximamente" obsoleto~~ → **RESUELTO**
   2. **Falta CTA post-descarga en `/recursos`** (`RecursosLeadModal.tsx`) → **PENDIENTE — único bloqueador real restante**
@@ -60,12 +60,8 @@ Benavides trabaja desde **2 ordenadores** sobre este mismo repo. **Este `CONTEXT
 
 ## MARCA / LOOK & FEEL ✅ (02-jul-2026)
 
-- **Fuente única de marca = `docs/brand-system.md`** v1.1 (30-jun-2026). ⚠️ **§logo DESACTUALIZADO** — ver punto siguiente.
-- **LOGO ACTUALIZADO (02-jul tarde):** nueva versión = **badge circular Cyprus `#004741` con monograma AB angular en Sand `#F0EDE4`** (la versión anterior era sin círculo; `brand-system.md` aún describe "sin círculo" — pendiente corregir esa línea del doc).
-- ⚠️ **DESINCRONIZACIÓN DE BINARIOS:** el logo nuevo se cambió **directamente en Lovable** (favicon activo en producción), pero NO está en GitHub. Los `logo-ab.png` de ambos repos son la versión antigua. **Acción manual pendiente de Benavides** (mismo archivo, mismo nombre `logo-ab.png`, reemplaza al subirse):
-  1. Repo web: https://github.com/antoniobenavides-py/antoniobenavides.com/upload/main/public
-  2. Repo workspace: https://github.com/antoniobenavides-py/antonio-claude-workspace/upload/main/assets/logo
-  Hasta que se haga, cualquier deploy desde GitHub podría re-desplegar el logo antiguo o divergir. Regla vigente: binarios nunca por API, solo GitHub web UI o Lovable.
+- **Fuente única de marca = `docs/brand-system.md`** v1.1 (30-jun-2026). ⚠️ **§logo DESACTUALIZADO** — pendiente micro-fix (ver PRÓXIMO PASO).
+- **LOGO ACTUALIZADO Y RESINCRONIZADO (02-jul tarde):** badge circular Cyprus `#004741` con monograma AB angular en Sand `#F0EDE4`. Benavides subió `logo-ab.png` manualmente a ambos repos (web y workspace) — **binarios ya sincronizados con la versión activa en Lovable.**
 - **Rediseño completo Cyprus/Sand (Combo 04) en antoniobenavides.com — EN PRODUCCIÓN.**
   - Migrado: `src/index.css` (tokens), `Home.tsx`, `ChatWidget.tsx`, `WizardModal.tsx`, `ServiciosIA.tsx` (pricing).
   - CTA (`btn-copper`) = Sand sólido sobre texto Cyprus (nombre de clase conservado, valor migrado).
@@ -102,9 +98,9 @@ Reglas: prestige pricing, números redondos, sin charm pricing, siempre + IVA vi
 | mar 7 jul | Post 5 — Cierre personal (versión genérica) | ⏳ Programado |
 
 ### Pieza reactiva Fable 5 (02-jul) — fuera de calendario, con ventana temporal
-- **Blog publicado y desplegado:** `antoniobenavides.com/blog/optimizar-sesiones-claude-fable-5` — "Cómo estructurar sesiones con Claude Fable 5: objetivo, plan y verificación". Método evergreen + gancho 7-jul. Datos verificados: vuelta 1-jul, incluido hasta 7-jul con tope 50% del límite semanal (Pro/Max/Team), después usage credits.
-- **Post LinkedIn entregado en bloques copiables** (cuerpo sin link + primer comentario con link al blog). Imagen: captura promocional de reapertura de Fable 5.
-- **Recomendación de publicación: 02-jul 17:30–18:00** (no el 6 — ventana muerta; no chocar con Serie A post 4 del 3-jul 9:00). Estado de publicación: en manos de Benavides.
+- **Blog EN PRODUCCIÓN y verificado:** `antoniobenavides.com/blog/optimizar-sesiones-claude-fable-5` — "Cómo estructurar sesiones con Claude Fable 5: objetivo, plan y verificación". Método evergreen + gancho 7-jul.
+- **Post LinkedIn entregado en bloques copiables** (cuerpo sin link + primer comentario con link al blog). Imagen: badge oficial de reapertura de Fable 5.
+- **Publicación:** pendiente de confirmar por Benavides si ya se publicó tras el fix del 404 — recomendación seguía siendo tarde del 02-jul. Al retomar, confirmar estado antes de sugerir nada más sobre esta pieza.
 
 ### Carruseles autoridad (lunes)
 | Fecha | Tema | Estado |
@@ -131,11 +127,11 @@ Regla crítica: CTA siempre a `/recursos` con formulario — NUNCA al PDF direct
 
 - 9 Claude Skills instalados (`deploy-produccion`, `traspaso-sesion`, `log-construccion`, `propuesta-comercial`, `arquitectura-agentes`, `cv-portfolio`, `post-linkedin`, `lead-magnet-pdf`, `look-and-feel`)
 - 4 PDF lead magnets en `/recursos` — flujo verificado en producción
-- Blog con 7 entradas (nueva 02-jul: sesiones Fable 5 — primera pieza reactiva del blog, en sitemap y listado)
+- Blog con 7 entradas (Fable 5 verificada en vivo 02-jul — primera pieza reactiva del blog, en sitemap y listado)
 - 2 CVs ATS-optimizados · Portfolio 25+ casos
 - Carrusel LinkedIn "Sonnet 5 / verificador" (1 jul) — plantilla de marca reutilizable
 - `docs/brand-system.md` v1.1 (pendiente micro-fix §logo) · `docs/paletas-combos-colores.md`
-- Rediseño Cyprus/Sand desplegado + favicon con logo nuevo (vía Lovable)
+- Rediseño Cyprus/Sand desplegado + favicon con logo nuevo, binarios sincronizados en ambos repos
 
 ---
 
@@ -143,8 +139,9 @@ Regla crítica: CTA siempre a `/recursos` con formulario — NUNCA al PDF direct
 
 - **Lovable = source of truth de producción.** Flujo sin créditos: GitHub `create_or_update_file` (sincroniza a preview) + `Lovable:deploy_project` (publica, gratis). **Binarios solo por GitHub web UI o Lovable — nunca por API.**
 - **Proyecto Lovable ID: `36b0aa48-f4a0-477a-a2df-51dd31764de7`** (verificado: deploys 02-jul OK).
+- ⚠️ **LECCIÓN 02-jul — timing commit→deploy:** el 404 del blog vino de desplegar (`deploy_project`) demasiado pegado al último commit — la sync GitHub→Lovable no había asentado aún y publicó un árbol viejo. **Regla nueva: esperar 2-3 min entre el último commit de una tanda y el deploy final**, o hacer un deploy de verificación y otro de confirmación si hay prisa. Se resolvió con un segundo `deploy_project`, confirmado visualmente por Benavides.
 - Vite + React + TypeScript · Supabase (A Lovable / B `saxagolemwmfroxelscd`) · Vercel · Stripe (config pendiente) · Resend
-- `Lovable` MCP: fallos intermitentes de aprobación en llamadas de lectura (`list_workspaces`); `deploy_project` no afectado — reintentar, no bloquea.
+- `Lovable` MCP: fallos intermitentes de aprobación en llamadas de lectura (`list_workspaces`, `read_file`); `deploy_project` no afectado — reintentar, no bloquea.
 - `GitHub:search_code` NO indexa los repos privados — auditar leyendo archivos.
 - Opus para arquitectura · Sonnet para ejecución mecánica.
 - **Filosofía:** sistemas agénticos con loop auto-verificable, NO automatizaciones rígidas.
@@ -182,11 +179,11 @@ Regla crítica: CTA siempre a `/recursos` con formulario — NUNCA al PDF direct
 
 ## DECISIONES ESTRATÉGICAS ACTIVAS
 
-- **Regla anti-dispersión:** no construir nueva infraestructura antes del primer cierre comercial. Excepciones conscientes ya ejecutadas y cerradas: rediseño Cyprus/Sand (01-02 jul) y blog reactivo Fable 5 (02-jul, justificado por ventana temporal + tráfico a la web).
+- **Regla anti-dispersión:** no construir nueva infraestructura antes del primer cierre comercial. Excepciones conscientes ya ejecutadas y cerradas: rediseño Cyprus/Sand (01-02 jul) y blog reactivo Fable 5 (02-jul, justificado por ventana temporal + tráfico a la web). **Ambas cerradas — la próxima sesión debe volver al P0 comercial (recursos + Stripe) por defecto, no abrir un tercer frente sin justificación explícita.**
 - **Neutralidad sobre Analytica** en todo contenido público mientras siga empleado.
 - Copilot Studio / M365: solo keyword ATS.
 - **Post 5 LinkedIn (7 jul):** versión genérica confirmada — sin nombrar ISO 17025.
-- **Contenido reactivo a actualidad:** validado dos veces (carrusel Sonnet 5, blog Fable 5). Ancla siempre a experiencia verificable propia; datos de producto siempre verificados por búsqueda antes de publicar (corregido "Plus"→Pro/Max/Team, tope 50%).
+- **Contenido reactivo a actualidad:** validado dos veces (carrusel Sonnet 5, blog Fable 5). Ancla siempre a experiencia verificable propia; datos de producto siempre verificados por búsqueda antes de publicar.
 
 ---
 
@@ -201,16 +198,17 @@ Regla crítica: CTA siempre a `/recursos` con formulario — NUNCA al PDF direct
 | 30 jun 2026 | Protocolo multi-equipo · `brand-system.md` v1.0→v1.1 · skill `look-and-feel` |
 | 01 jul 2026 | Carrusel reactivo Sonnet 5 programado (1 jul 9:00) · plantilla validada ⭐ · spec Stripe |
 | 02 jul 2026 | **Rediseño Cyprus/Sand DESPLEGADO** (tokens, Home, ChatWidget, WizardModal) · favicon+logo · pricing `/servicios-ia` corregido (750€ diagnóstico) · flujo recursos+leads verificado en producción |
-| 02 jul 2026 (tarde) | **Blog Fable 5 publicado y desplegado** (`/blog/optimizar-sesiones-claude-fable-5`: entrada + listado + ruta + sitemap, commits `624e79f`·`1b72745`·`3bdf9c0`·`c3cdbff`, deploy `ebfb769`) · post LinkedIn entregado (publicación recomendada 17:30-18:00 del 2-jul) · **logo sustituido por badge circular directamente en Lovable → binarios de GitHub desincronizados (acción manual pendiente)** |
+| 02 jul 2026 (tarde) | **Blog Fable 5 publicado, desplegado, corregido tras 404 (deploy prematuro) y VERIFICADO en vivo por Benavides.** Post LinkedIn entregado. Logo badge circular resincronizado en ambos repos GitHub por Benavides (`public/logo-ab.png` y `assets/logo/logo-ab.png`) — marca ya coherente en Lovable + GitHub. |
 
 ---
 
 ## PRÓXIMO PASO (al retomar)
 
-0. ⚠️ **ACCIÓN MANUAL (Benavides):** subir el logo nuevo (badge circular) como `logo-ab.png` a: (1) https://github.com/antoniobenavides-py/antoniobenavides.com/upload/main/public y (2) https://github.com/antoniobenavides-py/antonio-claude-workspace/upload/main/assets/logo — resincroniza GitHub con Lovable.
-1. **Publicar post LinkedIn Fable 5** (hoy 17:30-18:00) con link en primer comentario fijado. Después del 7-jul la pieza queda como SEO evergreen; no re-promocionar con el gancho temporal.
-2. **P0:** CTA post-descarga en `RecursosLeadModal.tsx` (bloqueador Serie Recursos, 14 jul).
-3. **Stripe:** ejecutar catálogo en panel (~10 min).
+1. **Confirmar si el post LinkedIn Fable 5 se llegó a publicar** (quedó pendiente al cerrar la sesión del 02-jul). Si no, la ventana de gancho temporal (7-jul) sigue viva pero se acorta cada día — decidir con Benavides si aún compensa o se deja el blog como pieza evergreen silenciosa.
+2. **P0 real — único bloqueador de Serie Recursos (14 jul):** CTA post-descarga en `RecursosLeadModal.tsx`.
+3. **Stripe:** ejecutar catálogo en panel (~10 min) — condición para cobrar el día que cierre el primer lead.
 4. **Micro-fix:** `docs/brand-system.md` §logo — sustituir "sin círculo" por descripción del badge circular actual.
 5. **Slot carrusel 6 jul:** decidir tema.
 6. **Carruseles 13/20/27 jul:** producción visual. **Serie Recursos:** programar 4 posts.
+
+**Regla para la próxima apertura:** por defecto, empezar por 2 y 3 — son los únicos con relación directa al hito #1 (primer cierre comercial). No abrir frentes nuevos de marca/contenido sin justificación explícita del propio Benavides.
